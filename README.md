@@ -11,3 +11,5 @@ Los comandos del Makefile funcionarán en Linux y MacOS. En caso de usar Windows
 python3 main.py <filename> <dup>
   filename: **ruta** al fichero que contiene la lista de palabras, una por línea
   dup: **yes|no**, yes para eliminar palabras duplicadas, no para mantener la lista
+
+He modificado este readme para mostrar como se puede crear una nueva rama a partir de dev para resolver la issue 
