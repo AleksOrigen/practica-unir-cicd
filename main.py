@@ -9,8 +9,20 @@ import sys
 DEFAULT_FILENAME = "words.txt"
 DEFAULT_DUPLICATES = False
 
-
 def sort_list(items, ascending=True):
+    """
+    Ordena una lista de elementos.
+
+    Parámetros:
+    items (list): Lista de elementos a ordenar.
+    ascending (bool): Si es True, ordena en orden ascendente; si es False, en orden descendente. El valor por defecto es True.
+
+    Retorno:
+    list: Lista ordenada.
+
+    Excepciones:
+    RuntimeError: Si el parámetro 'items' no es una lista, se lanza una excepción con un mensaje de error.
+    """
     if not isinstance(items, list):
         raise RuntimeError(f"Could not sort: {type(items)}")
 
@@ -18,6 +30,15 @@ def sort_list(items, ascending=True):
 
 
 def remove_duplicates_from_list(items):
+    """
+    Elimina elementos duplicados de una lista.
+
+    Parámetros:
+    items (list): Lista de elementos de la cual se desean eliminar duplicados.
+
+    Retorno:
+    list: Lista sin elementos duplicados.
+    """
     return list(set(items))
 
 
