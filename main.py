@@ -62,7 +62,7 @@ if __name__ == "__main__":
                 word_list.append(line.strip())
     else:
         print(f"File '{filename}' does not exist")
-        word_list = ["ravenclaw", "gryffindor", "slytherin", "hufflepuff"]
+        word_list = ["ravenclaw", "Slytherin", "Howards", "hufflepuff"]
 
     if remove_duplicates:
         word_list = remove_duplicates_from_list(word_list)
